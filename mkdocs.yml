@@ -93,6 +93,7 @@ nav:
     - "🍀 Apache Airflow": "apache-airflow-0-instalacion.md"
     - "♾️ Apache Superset": "apache-superset.md"
     - "📊 Click House": "clickhouse.md"
+    - "🧊 TODO": "todo.md"
   - "☁️ Nube/Cloud/Openstack":
     - "☁️ Introdución": "nube-0-intro.md"
     - "➕ Crear Instancia": "nube-1-openstack-crear-lanzar-instancia.md"

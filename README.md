@@ -17,6 +17,12 @@ Este repositorio é o resultado dunha fusión de repositorios: SBD, BDA e docs.
 
 Todos os materiais publícanse con copyright. Permítese o seu uso en docencia, pero non para formación de formadores. Non se permite a súa inclusión en materiais elaborados, oficiais ou non por parte de empresas que elaboren/vendan materiais, bootcamps, editoriais e similares ou a institucións públicas ou privadas de calquer tipo. O único uso permitido é a docentes finais para as súas clases.
 
+Fállache a páxina por mor da Liga de fútbol? Podes clonar o repositorio dentro dun WSL ou en GNU/Linux e executar o script: ./mkdocs.sh
+
+Lembra que precisas docker (mira en /docs para instalalo).
+
+Para a facer as prácticas de webscraping con Cloudflare temo que terás que conectarte cando che deixe a túa operadora.
+
 ## Presentacións
 
 Presentacións feitas con [revealjs](https://revealjs.com/). Se atopas erros, por favor, ponte en contacto conmigo (preme nunha das presentacións e mira o correo na última diapositiva).
