@@ -150,7 +150,7 @@ Se queremos conectar dende DBeaver na nosa máquina local e temos instalado o co
 
 Na lapela Driver properties lembra mudar o valor de **allowPublicKeyRetrieval** a **TRUE** posto que é necesario no caso de empregar cifrado. Segundo a configuración, pode ser necesario.
 
-Podes acceder a un manual máis detallado en [🦫 DBeaver e túneles SSH](/bigdata/dbeaver-tunel-ssh/) onde tamén aprenderás como realizar un túnel SSH. Este túnel pode ser necesario si o servidor de base de datos está detrás dun firewall.
+Podes acceder a un manual máis detallado en [🦫 DBeaver e túneles SSH](dbeaver-tunel-ssh.md) onde tamén aprenderás como realizar un túnel SSH. Este túnel pode ser necesario si o servidor de base de datos está detrás dun firewall.
 
 
 ## Comandos básicos
