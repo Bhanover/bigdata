@@ -45,14 +45,14 @@ Podes empregar o seguinte script que baixa as versión anteriormente citadas, de
 ⚠️ Se deixa de funcionar podes corrixilo buscando a nova URL do driver.
 
 ~~~~bash
-wget https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-j-9.4.0.tar.gz
+wget https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-j-9.5.0.tar.gz
 wget https://downloads.mysql.com/archives/get/p/3/file/mysql-connector-j-8.4.0.tar.gz
-tar -xzf mysql-connector-j-9.4.0.tar.gz -C $HOME/nifi-compartido/jdbc
+tar -xzf mysql-connector-j-9.5.0.tar.gz -C $HOME/nifi-compartido/jdbc
 tar -xzf mysql-connector-j-8.4.0.tar.gz -C $HOME/nifi-compartido/jdbc
-mv $HOME/nifi-compartido/jdbc/mysql-connector-j-9.4.0/mysql-connector-j-9.4.0.jar $HOME/nifi-compartido/jdbc/
+mv $HOME/nifi-compartido/jdbc/mysql-connector-j-9.5.0/mysql-connector-j-9.5.0.jar $HOME/nifi-compartido/jdbc/
 mv $HOME/nifi-compartido/jdbc/mysql-connector-j-8.4.0/mysql-connector-j-8.4.0.jar $HOME/nifi-compartido/jdbc/
-rm -rf $HOME/nifi-compartido/jdbc/mysql-connector-j-9.4.0 $HOME/nifi-compartido/jdbc/mysql-connector-j-8.4.0
-rm mysql-connector-j-8.4.0.tar.gz mysql-connector-j-9.4.0.tar.gz
+rm -rf $HOME/nifi-compartido/jdbc/mysql-connector-j-9.5.0 $HOME/nifi-compartido/jdbc/mysql-connector-j-8.4.0
+rm mysql-connector-j-8.4.0.tar.gz mysql-connector-j-9.5.0.tar.gz
 ~~~~
 
 Podes empregar un parámetro dentro dun contexto coa **ruta completa ao JDBC** para engadila rápidamente cando fose preciso. Mira a [páxina de parámetros](apache-nifi-2-parametros.md) para atopar como configuralo deste xeito.
