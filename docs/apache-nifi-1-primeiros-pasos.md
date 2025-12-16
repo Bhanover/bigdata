@@ -25,7 +25,7 @@ docker run -p 9906:3306 --name mysql4nifi \
     --restart unless-stopped -d mysql:8
 ```
 
-Conectamos á base de datos:
+Conectamos á base de datos (executa o comando dúas veces, a primeira falla porque avisa que é inseguro pasar o contrasinal por liña de comandos):
 
 ``` bash
 docker exec -it mysql4nifi mysql -hlocalhost -unifi -pNifi.Abc123 nifi
