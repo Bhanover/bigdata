@@ -1,7 +1,7 @@
 # Big Data apuntes e exemplos © 2025 Jose Sanchez 
 <https://jfsanchez.es/bigdata>
 
-- **datasets**: Datos de exemplo
+- **datasets** - Datos de exemplo
 - **docs** - MKdocs con apuntamentos
     - *docs/presentacions* - Presentacións feitas con revealjs de varios temas
 - **notebooks** - Con exemplos de código
@@ -12,10 +12,6 @@
     - *scraping*
 - **nifi** - Plantillas gardadas de exemplo
 - **tarefas**
-
-Este repositorio é o resultado dunha fusión de repositorios: SBD, BDA e docs.
-
-🤝 **LICENCIA:** Podes empregar os materiais nas túas clases [como indico no arquivo de licencia](LICENSE.md).
 
 📛 Fállache a páxina por mor da Liga de fútbol? Podes clonar o repositorio dentro dun WSL ou en GNU/Linux e executar o script: `./mkdocs.sh`. Lembra que precisas docker (mira en /docs para instalalo). Para a facer as prácticas de webscraping con Cloudflare temo que terás que conectarte cando che deixe a túa operadora.
 
