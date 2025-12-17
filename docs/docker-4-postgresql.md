@@ -19,26 +19,7 @@ Se non che funciona a conexión dende o exterior, cambia o porto a outro que non
 docker exec -it de-postre-sql psql -U postgres
 ```
 
-
-## Comandos útiles
-
-**Amosar bases de datos**
-
-``` sql
-\l
-```
-
-**Seleccionar base de datos a empregar**
-
-``` sql
-\c postgres
-```
-
-**Amosar táboas**
-
-``` sql
-\dt
-```
+## Creación de BD, usuario e permisos
 
 **Crear base de datos**
 
@@ -80,6 +61,28 @@ Se temos aberta a conexión á BBDD, pechámola.
 docker exec -it de-postre-sql \
     psql postgresql://lambon:Fl4nD3C4f3@localhost/sobremesa
 ```
+
+
+## Comandos útiles
+
+**Amosar bases de datos**
+
+``` sql
+\l
+```
+
+**Seleccionar base de datos a empregar**
+
+``` sql
+\c postgres
+```
+
+**Amosar táboas**
+
+``` sql
+\dt
+```
+
 
 ## Conexión dende Python
 

@@ -63,7 +63,7 @@ conda activate bigdata
 
 3. No caso que non se abrise automáticamente a web do navegador, vai a: <http://localhost:8888/lab>
 
-## 🔗 Referencias
+## 🔗 Máis información
 
 - [Web oficial de Jupyter](https://jupyter.org/)
 - [Colab, caderno de Google na nube](https://colab.research.google.com/)
