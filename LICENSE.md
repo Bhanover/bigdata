@@ -2,7 +2,7 @@
 
 ## Español
 
-Todos los materiales se publican con copyright. Se permite su uso en docencia, pero no para formación de formadores. No se permite su inclusión en materiales elaborados, oficiales o no por parte de empresas que elaboren/vendan materiales, bootcamps, editoriales y similares o la instituciones públicas o privadas de cualquer tipo. El único uso permitido es la docentes finales para sus clases.
+Todos los materiales se publican con copyright. Se permite su uso en docencia, pero no para formación de formadores. No se permite su inclusión en materiales elaborados, oficiales o no por parte de empresas que elaboren/vendan materiales, bootcamps, editoriales y similares o la instituciones públicas o privadas de cualquer tipo. El único uso permitido es a docentes finales para sus clases.
 
 En caso de excepciones se marcarán la licencia en el material afectado.
 
