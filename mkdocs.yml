@@ -105,6 +105,7 @@ nav:
   - "📶 Microsoft PowerBi": "powerbi-0-python.md"
   - "🕸️ Scraping / Ráscao!":
     - "⚫ Scraping": "scraping.md"
+    - "🤖 API REST": "scraping-requests-api.md"
     - "🥫 Beautiful Soup": "scraping-bs.md"
     - "✅ Selenium": "scraping-selenium.md"
     - "🕷️ Scrapy": "scraping-scrapy.md"

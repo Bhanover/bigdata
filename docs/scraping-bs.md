@@ -1,4 +1,4 @@
-# Beautiful Soup
+# 🕸️ Scraping / Ráscao! &mdash; 🥫 Beautiful Soup
 
 Podes acceder ao exemplo en: 
 

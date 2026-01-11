@@ -2,7 +2,7 @@
 
 ![Logo Jupyter](images/jupyter/Jupyter_logo.svg#derecha "Logo Jupyter")
 
-Podes empregar Jupyter lab dende [vscode instalando o plugin](conda-0-config-basica.md#configurar-visual-studio-code-vscode-con-conda-e-jupyterlab), sen embargo, se queres ver o caderno vía web (de xeito nativo) podes instalar Jupyter e arrancalo.
+Podes empregar Jupyter lab dende [vscode instalando o plugin](conda-0-config-basica.md#configurar-visual-studio-code-vscode-con-conda-e-jupyter-lab), sen embargo, se queres ver o caderno vía web (de xeito nativo) podes instalar Jupyter e arrancalo.
 
 ## 🧾 Instalación
 

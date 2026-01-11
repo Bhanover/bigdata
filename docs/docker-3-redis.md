@@ -114,3 +114,4 @@ if (empregamos_docker):
 ## Máis información
 
 - <https://redis.io/docs/latest/develop/data-types/>
+- [Valkey](https://valkey.io/)
