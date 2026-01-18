@@ -4,7 +4,7 @@
     	<!-- Recordatorio: Cambiar estas propiedades -->
       <title>Introdución a docker</title>
     	<meta name="author" content="Jose Sánchez">
-    	<meta property="emailuser" content="correo">
+    	<meta property="encrypted_emailuser" content="pbeerb">
     	<meta property="emaildomain" content="jfsanchez.es">
     	<meta property="creationdate" content="&copy; Xaneiro 2025">
     	<!--meta property="documenturl" content="https://jfsanchez.es/"-->
@@ -22,7 +22,7 @@
             }
             .trojo{ color: darkred; }
             .tverde{ color: darkgreen; }
-            .tamarillo{ color: darkgoldenrod; }
+            .tamarillo{ color: rgb(48, 42, 28); }
             .tazul{ color: darkblue; }
             .famarillo { background-color: lightgoldenrodyellow; }
             .divdual {
@@ -51,6 +51,9 @@
             .sec4 h3{
               color: darkgreen !important;
               font-weight: bolder;
+            }
+            .invisible{
+              visibility: hidden;
             }
         </style>
     </head>
@@ -115,9 +118,9 @@ docker run hello-world</code></pre>
 
                 <section class="sec1">
                   <section 
-                  data-background-image="imaxes/imagenes.png"
-                  data-background-size="contain"
-                  data-transition-speed="slow">
+                    data-background-image="imaxes/imagenes.png"
+                    data-background-size="contain"
+                    data-transition-speed="slow">
                     <h1 style="background-color: gainsboro; color: #666; opacity:0.8;"><strong>Imaxes</strong></h1>
                     <aside class="notes">
                       <ul>
@@ -129,7 +132,11 @@ docker run hello-world</code></pre>
                     </aside>
                   </section>
                 
-                  <section>
+                  <section
+                    data-background-image="imaxes/imagenes.png"
+                    data-background-size="contain"
+                    data-background-opacity="0.2"
+                    data-transition-speed="slow">
                     <h3>Imaxes</h3>
                     <ul>
                       <li>É unha OVA? É unha ISO?</li>
@@ -154,7 +161,10 @@ docker run hello-world</code></pre>
                     </aside>
 
                   </section>
-                  <section>
+                  <section data-background-image="imaxes/imagenes.png"
+                    data-background-size="contain"
+                    data-background-opacity="0.2"
+                    data-transition-speed="slow">
                     <h3>Descarga dunha imaxe</h3>
                     <h4>Formato</h4>
                     <pre><code data-trim data-noescape class="bash">docker pull usuario/imaxe:tag</code></pre>
@@ -169,7 +179,10 @@ docker run hello-world</code></pre>
                     </aside>
                   </section>
 
-                  <section>
+                  <section data-background-image="imaxes/imagenes.png"
+                    data-background-size="contain"
+                    data-background-opacity="0.2"
+                    data-transition-speed="slow">
                     <h3>Exercicio. Xa!</h3>
                     <ul>
                       <li>Ir a <a href="https://hub.docker.com" target="_blank">hub.docker.com</a></li>
@@ -185,7 +198,10 @@ docker run hello-world</code></pre>
                     </aside>
                   </section>
 
-                  <section>
+                  <section data-background-image="imaxes/imagenes.png"
+                    data-background-size="contain"
+                    data-background-opacity="0.2"
+                    data-transition-speed="slow">
                     <h3>Operacións con imaxes</h3>
                     <h4>Ver as imaxes descargadas en local</h4>
                     <pre><code data-trim data-noescape class="bash">docker image ls</code></pre>
@@ -200,7 +216,10 @@ docker image ls
                     
                   </section>
 
-                  <section>
+                  <section data-background-image="imaxes/imagenes.png"
+                    data-background-size="contain"
+                    data-background-opacity="0.2"
+                    data-transition-speed="slow">
                     <h3>save / load</h3>
                     <h4>⚠️ Lembra ter descargada/xerada/construida a imaxe</h4>
                     <pre><code data-trim data-noescape class="bash">docker pull alpine</code></pre>
@@ -218,7 +237,10 @@ docker image ls
                   
                   </section>
 
-                  <section>
+                  <section data-background-image="imaxes/imagenes.png"
+                    data-background-size="contain"
+                    data-background-opacity="0.2"
+                    data-transition-speed="slow">
                     <h3>Creando unha imaxe cun Dockerfile</h3>
 <pre><code data-trim data-noescape class="Dockerfile">
   FROM debian:latest
@@ -278,7 +300,11 @@ docker image ls
                     </aside>
                   </section>
 
-                  <section>
+                  <section 
+                  data-background-image="imaxes/contedor.png"
+                  data-background-opacity="0.15"
+                  data-background-size="contain"
+                  data-transition-speed="slow">
                     <h3>Contedores</h3>
                     <h4>Lanzar o contedor coa imaxe hello-world (<code><strong>run</strong></code>)</h4>
                     <pre><code data-trim data-noescape class="bash">docker run hello-world</code></pre>
@@ -299,7 +325,11 @@ docker image ls
                     </aside>
                   </section>
 
-                  <section>
+                  <section 
+                  data-background-image="imaxes/contedor.png"
+                  data-background-opacity="0.15"
+                  data-background-size="contain"
+                  data-transition-speed="slow">
                     <h3>Tarefa rápida</h3>
                     <ol>
                       <li>Mira con: <strong><code>docker ps -a</code></strong> os contedores finalizados e en execución.</li>
@@ -311,7 +341,11 @@ docker image ls
                     </aside>
                   </section>
 
-                  <section>
+                  <section 
+                  data-background-image="imaxes/contedor.png"
+                  data-background-opacity="0.15"
+                  data-background-size="contain"
+                  data-transition-speed="slow">
                     <h3>Redirixir un porto</h3>
                     Sintaxe: <code style="color: red; background-color: antiquewhite;">-p PORTO_ANFITRIÓN:PORTO_CONTEDOR</code>
                     <pre><code data-trim data-noescape class="docker">docker run --name PORTOFINO \
@@ -331,7 +365,11 @@ docker image ls
                     </aside>
                   </section>
 
-                  <section>
+                  <section 
+                  data-background-image="imaxes/contedor.png"
+                  data-background-opacity="0.15"
+                  data-background-size="contain"
+                  data-transition-speed="slow">
                     <h3>run en modo dettached (separado)</h3>
                     <p>Parámetro: <code>-d</code></p>
                     <pre><code data-trim data-noescape class="docker">docker run --name websrv \
@@ -351,7 +389,11 @@ docker image ls
                     </aside>
                   </section>
 
-                  <section>
+                  <section 
+                  data-background-image="imaxes/contedor.png"
+                  data-background-opacity="0.15"
+                  data-background-size="contain"
+                  data-transition-speed="slow">
                     <h3>Tarefa rápida</h3>
                     <ul>
                       <li>Executa un novo contedor coa última imaxe/tag de <strong>nginx</strong> (latest).</li>
@@ -362,7 +404,11 @@ docker image ls
                     <pre class="fragment"><code data-trim data-noescape class="docker">docker run --name enginex -d -p 8080:80 nginx:latest</code></pre>
                   </section>
 
-                  <section>
+                  <section 
+                  data-background-image="imaxes/contedor.png"
+                  data-background-opacity="0.15"
+                  data-background-size="contain"
+                  data-transition-speed="slow">
                     <h3>start/stop</h3>
                       <ul>
                         <li>Para o contedor anterior: <pre><code data-trim data-noescape class="docker">docker stop enginex</code></pre></li>
@@ -378,7 +424,11 @@ docker image ls
                     </aside>
                   </section>
 
-                  <section>
+                  <section 
+                  data-background-image="imaxes/contedor.png"
+                  data-background-opacity="0.15"
+                  data-background-size="contain"
+                  data-transition-speed="slow">
                     <h3>Contedor con autoinicio</h3>
                     <p>Opcións do parámetro <pre><code data-trim data-noescape class="docker">--restart</code></pre></p>
                     <ul>
@@ -393,7 +443,11 @@ docker image ls
                     </aside>
                   </section>
 
-                  <section>
+                  <section 
+                  data-background-image="imaxes/contedor.png"
+                  data-background-opacity="0.15"
+                  data-background-size="contain"
+                  data-transition-speed="slow">
                     <h3>Tarefa rápida</h3>
                     <p>Crea un contedor (docker run) que...</p>
                     <ol>
@@ -405,7 +459,11 @@ docker image ls
                     </ol>
                   </section>
 
-                  <section>
+                  <section 
+                  data-background-image="imaxes/contedor.png"
+                  data-background-opacity="0.15"
+                  data-background-size="contain"
+                  data-transition-speed="slow">
                     <h3>Solución</h3>
                     <pre><code data-trim data-noescape class="docker">docker run --name enginex \
   -d \
@@ -417,7 +475,11 @@ docker image ls
                     </aside>
                   </section>
 
-                  <section>
+                  <section 
+                  data-background-image="imaxes/contedor.png"
+                  data-background-opacity="0.15"
+                  data-background-size="contain"
+                  data-transition-speed="slow">
                     <h3>run en interactivo</h3>
                     <p>Parámetro: <code>-it</code></p>
                     <pre><code data-trim data-noescape class="docker">docker run --rm -it alpine sh</code></pre></li>
@@ -431,7 +493,11 @@ docker image ls
                     </aside>
                   </section>
 
-                  <section>
+                  <section 
+                  data-background-image="imaxes/contedor.png"
+                  data-background-opacity="0.15"
+                  data-background-size="contain"
+                  data-transition-speed="slow">
                     <h3>exec &mdash; Aproveitando o de dentro!</h3>
                     <h4>Creamos o contedor (servidor MariaDB)</h4>
                     <pre><code data-trim data-noescape class="docker">docker run --name blondie \
@@ -465,7 +531,11 @@ docker image ls
                     <h1 style="background-color: lightskyblue; color:navy; opacity:0.8;"><strong>Volumes</strong></h1>
                   </section>
 
-                  <section>
+                  <section
+                  data-background-image="imaxes/volumen.png"
+                  data-background-opacity="0.15"
+                  data-background-size="contain"
+                  data-transition-speed="slow">
                     <h3>Volumes (-v)</h3>
                     
                     <ul>
@@ -479,7 +549,11 @@ docker image ls
                     </aside>
                   </section>
 
-                  <section>
+                  <section
+                  data-background-image="imaxes/volumen.png"
+                  data-background-opacity="0.15"
+                  data-background-size="contain"
+                  data-transition-speed="slow">
                     <h3>Creando e asignando un volume</h3>
 
                     <h4>Crear volume</h4>
@@ -498,7 +572,11 @@ docker image ls
                     </aside>
                   </section>
 
-                  <section>
+                  <section
+                  data-background-image="imaxes/volumen.png"
+                  data-background-opacity="0.15"
+                  data-background-size="contain"
+                  data-transition-speed="slow">
                     <h3>Datos de proba</h3>
                     <h4>Buscar contrasinal root: GENERATED ROOT PASSWORD</h4>
                     <pre><code data-trim data-noescape class="docker">docker logs ginger</code></pre>
@@ -521,7 +599,11 @@ QUIT;
                     </aside>
                   </section>
 
-                  <section>
+                  <section
+                  data-background-image="imaxes/volumen.png"
+                  data-background-opacity="0.15"
+                  data-background-size="contain"
+                  data-transition-speed="slow">
                     <h3>A borrar! (ou non)</h3>
                     <h4>Parar e borrar o contedor</h4>
                     <pre><code data-trim data-noescape class="docker">docker volume ls
@@ -545,7 +627,11 @@ docker volume ls</code></pre>
                     </aside>
                   </section>
 
-                  <section>
+                  <section
+                  data-background-image="imaxes/volumen.png"
+                  data-background-opacity="0.15"
+                  data-background-size="contain"
+                  data-transition-speed="slow">
                     <h3>Facendo limpieza</h3>
                     <pre><code data-trim data-noescape class="docker">docker stop ginger
 docker rm ginger
@@ -564,7 +650,11 @@ docker volume ls</code></pre>
                     </aside>
                   </section>
 
-                  <section>
+                  <section
+                  data-background-image="imaxes/volumen.png"
+                  data-background-opacity="0.15"
+                  data-background-size="contain"
+                  data-transition-speed="slow">
                     <h3>Outros tipos de montaxe</h3>
                     <h4>Bind dun directorio a outro</h4>
                     <pre><code data-trim data-noescape class="docker">-v /home/usuario/anfitrion:/ruta/docker</code></pre>
@@ -585,7 +675,11 @@ docker volume ls</code></pre>
                     </aside>
                   </section>
 
-                  <section>
+                  <section
+                  data-background-image="imaxes/volumen.png"
+                  data-background-opacity="0.15"
+                  data-background-size="contain"
+                  data-transition-speed="slow">
                     <h3>Probando prune</h3>
                     O exemplo anterior debeu deixar alomenos un volume anónimo creado. Proba a borralo:
                     <pre><code data-trim data-noescape class="docker">docker volume ls
@@ -594,7 +688,11 @@ docker volume ls</code></pre>
                     <aside class="notes">Agora si que se borrarán porque non teñen un nome explícito, é dicir, son volumes anónimos.</aside>
                   </section>
 
-                  <section>
+                  <section
+                  data-background-image="imaxes/volumen.png"
+                  data-background-opacity="0.15"
+                  data-background-size="contain"
+                  data-transition-speed="slow">
                     <h3>Outras cousas interesantes de volumes</h3>
                     <p>Ruta por defecto dos volumes: <strong>/var/lib/docker/volumes/</strong></p>
                     <p>Son moi útiles para actualizar o software:</p>
@@ -620,7 +718,11 @@ docker volume ls</code></pre>
                 </section>
 
                 <!-- Por ampliar... -->
-                <section>
+                <section
+                data-background-image="imaxes/redes.png"
+                data-background-opacity="0.15"
+                data-background-size="contain"
+                data-transition-speed="slow">
                   <h3>network</h3>
                   <h4>Ver as redes</h4>
                   <pre><code data-trim data-noescape class="docker">docker network ls</code></pre>
@@ -639,7 +741,11 @@ docker volume ls</code></pre>
                   </aside>
                 </section>
 
-                <section>
+                <section
+                data-background-image="imaxes/redes.png"
+                data-background-opacity="0.15"
+                data-background-size="contain"
+                data-transition-speed="slow">
                   <h3>Lanzar un contedor cunha rede</h3>
                   Parámetro: <code>--network X</code>
                   <h3>Redirección de portos</h3>
@@ -696,11 +802,12 @@ docker volume ls</code></pre>
     	  document.querySelector("#copyrightline").innerText=
     	  document.head.querySelector("[name~=author][content]").content + " " +
     	  document.head.querySelector("[property~=creationdate][content]").content;
-    	  document.querySelector("#addemail").innerText=document.querySelector("#addemail").innerText+
-    	  document.head.querySelector("[property~=emailuser][content]").content + "@" +
-    	  document.head.querySelector("[property~=emaildomain][content]").content;
+    	  document.querySelector("#addemail").innerHTML=document.querySelector("#addemail").innerHTML + " &nbsp; <i>✉️ </i>"
+            + document.head.querySelector("[property~=encrypted_emailuser][content]").content.replace(/[a-zA-Z]/g, function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);}) 
+            + "<!--yesreply-->"+ "<span class=\"invisible\">.</span><span style=\"display:none\">falso</span><span class=\"invisible\" style=\"visibility: visible !important\">@</span><span class=\"invisible\">.</span>" 
+            + document.head.querySelector("[property~=emaildomain][content]").content;
+          // Para generar usuario de correo, desde PHP: print (str_rot13("emailuser"));
         </script>
-
     </body>
 
 </html>

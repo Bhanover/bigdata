@@ -4,7 +4,7 @@
 	<!-- Recordatorio: Cambiar estas propiedades -->
         <title>GIT Rápido para estudiantes sin tiempo</title>
 	<meta name="author" content="Jose Sánchez">
-	<meta property="emailuser" content="corrreo">
+  	<meta property="encrypted_emailuser" content="pbeerb">
 	<meta property="emaildomain" content="jfsanchez.es">
 	<meta property="creationdate" content="&copy; Novembro 2022">
 	<!--meta property="documenturl" content="https://jfsanchez.es/"-->
@@ -35,6 +35,9 @@
                 padding: 0;
                 text-align: justify;
                 font-size: 0.7em !important;
+            }
+            .invisible{
+              visibility: hidden;
             }
         </style>
     </head>
@@ -236,7 +239,7 @@
 
 		            <!--span class="fragment"-->
 	                <blockquote><small>&ldquo;<em><strong>Errare humanum est, sed perseverare diabolicum</strong></em>&rdquo;</small></blockquote>
-        	        <small id="addemail">Si encuentras errores, envíame un correo a: </small>
+        	        <small id="addemail">Erros? / Errores? / Mistakes? &rarr; <!-- email. --></small>
 		            <!--/span-->
                 </section>
 
@@ -272,17 +275,20 @@
     level: "Q", // L(owest),M ,Q ,H(ighest)
   });
 
+
   document.querySelector("#textourlmateriales").innerText=documenturl;
   document.querySelector("#urlmateriales").setAttribute('href', documenturl);
   document.querySelector("#copyrightline").innerText=
-	document.head.querySelector("[name~=author][content]").content + " " +
-	document.head.querySelector("[property~=creationdate][content]").content;
-  document.querySelector("#addemail").innerText=document.querySelector("#addemail").innerText+
-	document.head.querySelector("[property~=emailuser][content]").content + "@" +
-	document.head.querySelector("[property~=emaildomain][content]").content;
+  document.head.querySelector("[name~=author][content]").content + " " +
+  document.head.querySelector("[property~=creationdate][content]").content;
+  document.querySelector("#addemail").innerHTML=document.querySelector("#addemail").innerHTML + " &nbsp; <i>✉️ </i>"
+       + document.head.querySelector("[property~=encrypted_emailuser][content]").content.replace(/[a-zA-Z]/g, function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);}) 
+       + "<!--yesreply-->"+ "<span class=\"invisible\">.</span><span style=\"display:none\">falso</span><span class=\"invisible\" style=\"visibility: visible !important\">@</span><span class=\"invisible\">.</span>" 
+       + document.head.querySelector("[property~=emaildomain][content]").content;
+     // Para generar usuario de correo, desde PHP: print (str_rot13("emailuser"));
+ </script>
 
-</script>
-    </body>
+</body>
 </html>
 
 

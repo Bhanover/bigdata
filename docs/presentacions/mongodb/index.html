@@ -4,9 +4,9 @@
 	  <!-- Recordatorio: Cambiar estas propiedades -->
       <title>Introdución a MongoDB &mdash; galego</title>
 	  <meta name="author" content="Jose Sánchez">
-	  <meta property="emailuser" content="correo">
+      <meta property="encrypted_emailuser" content="pbeerb">
 	  <meta property="emaildomain" content="jfsanchez.es">
-	  <meta property="creationdate" content="&copy; Febreiro 2023. Actualizado: Marzo 2025">
+	  <meta property="creationdate" content="&copy; Feb 2023. Actualizado: Xan 2026">
 	  <!--meta property="documenturl" content="https://jfsanchez.es/"-->
 
       <meta charset="utf-8">
@@ -45,6 +45,9 @@
                 display: inline-block;
                 min-width: 1em;
                 border: 1px #fff solid;
+            }
+            .invisible{
+              visibility: hidden;
             }
       </style>
     </head>
@@ -1909,7 +1912,7 @@ authorization: enabled</code></pre>
                     <p id="copyrightline" style="color: orange;">Jose Sánchez</p>
 		            <p><small><a href="" id="urlmateriales"><span id="textourlmateriales"></span></a></small></p>
 	                <blockquote><small>&ldquo;<em><strong>Errare humanum est, sed perseverare diabolicum</strong></em>&rdquo;</small></blockquote>
-        	        <small id="addemail">Se atopas erros, envíame un correo a: </small>
+        	        <small id="addemail">Erros? / Errores? / Mistakes? &rarr; <!-- email. --></small>
                 </section>
         </div>
         </div>
@@ -1944,16 +1947,18 @@ authorization: enabled</code></pre>
     level: "Q", // L(owest),M ,Q ,H(ighest)
   });
 
-  document.querySelector("#textourlmateriales").innerText=documenturl;
-  document.querySelector("#urlmateriales").setAttribute('href', documenturl);
-  document.querySelector("#copyrightline").innerText=
-  document.head.querySelector("[name~=author][content]").content + " " +
-  document.head.querySelector("[property~=creationdate][content]").content;
-  document.querySelector("#addemail").innerText=document.querySelector("#addemail").innerText+
-  document.head.querySelector("[property~=emailuser][content]").content + "@" +
-  document.head.querySelector("[property~=emaildomain][content]").content;
 
-</script>
+    	  document.querySelector("#textourlmateriales").innerText=documenturl;
+    	  document.querySelector("#urlmateriales").setAttribute('href', documenturl);
+    	  document.querySelector("#copyrightline").innerText=
+    	  document.head.querySelector("[name~=author][content]").content + " " +
+    	  document.head.querySelector("[property~=creationdate][content]").content;
+    	  document.querySelector("#addemail").innerHTML=document.querySelector("#addemail").innerHTML + " &nbsp; <i>✉️ </i>"
+            + document.head.querySelector("[property~=encrypted_emailuser][content]").content.replace(/[a-zA-Z]/g, function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);}) 
+            + "<!--yesreply-->"+ "<span class=\"invisible\">.</span><span style=\"display:none\">falso</span><span class=\"invisible\" style=\"visibility: visible !important\">@</span><span class=\"invisible\">.</span>" 
+            + document.head.querySelector("[property~=emaildomain][content]").content;
+          // Para generar usuario de correo, desde PHP: print (str_rot13("emailuser"));
+        </script>
 
 </body>
 

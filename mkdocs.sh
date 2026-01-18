@@ -38,4 +38,4 @@ docker build -t jfmkdocs:v1 --build-arg=USER=$(id -u) .
 echo 'Borrando Dockerfile...'
 rm Dockerfile
 echo 'Lanzando contenedor temporal Pulsa Ctrl+C para borrarlo...'
-docker run -it --rm --name jfmkdoc -p ${PUERTO}:8080 -v ${RUTA_DOCS}:/build jfmkdocs:v1 serve --dev-addr 0.0.0.0:8080 --config-file /build/mkdocs.yml
+docker run -it --rm --name jfmkdoc -p ${PUERTO}:8080 -v ${RUTA_DOCS}:/build jfmkdocs:v1 serve --livereload --dev-addr 0.0.0.0:8080 --config-file /build/mkdocs.yml
