@@ -936,6 +936,36 @@ db.createUser({user: "adnauseam",
                         }</code></pre>
                         <aside class="notes"></aside>
                     </section>
+					<section data-background-gradient="linear-gradient(to bottom, antiquewhite, white)">
+
+					 <h4 style="color: darkred;"><b>Exercicio:</b> 
+					<p>Selecciona aqueles matriculados (modulos) de "Sistemas de Big Data" **E ADEMÁIS** que cumpran alomenos ($or) algunha destas condicións:</p>
+						 <ul>
+							 <li>A súa idade comprendida entre 18 e 23 anos (incluidos).</li>
+							 <li>Apelidos 'Sánchez".</li>
+						 </ul>
+						 <pre class="fragment"><code data-trim data-noescape>db.estudantes.find({
+    modulos: 'Sistemas de Big Data',
+    $or: [
+        {$and: [
+			{idade: {$gte: 18} },
+			{idade: {$lte: 23} }
+		]},
+		{apelidos: 'Sanchez' } ]
+})</code></pre>
+
+		<aside class="notes">
+			Tamén:
+			<pre><code data-trim data-noescape>db.estudantes.find({
+    modulos: 'Sistemas de Big Data',
+    $or: [
+		{idade: {$gte: 18, $lte: 23} },
+		{apelidos: 'Sanchez' } ]
+})
+			</code></pre>
+		</aside>
+
+					</section>
 
                     <section>
                         <h3 style="color: darkred;"><span class="tiposeccion" style="background-color: darkred;">&nbsp;</span> Contando documentos</h3>
@@ -1963,4 +1993,5 @@ authorization: enabled</code></pre>
 </body>
 
 </html>
+
 
